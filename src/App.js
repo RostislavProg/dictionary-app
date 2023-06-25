@@ -1,24 +1,44 @@
-import logo from './logo.svg';
+import { Container, Row, Col } from 'react-bootstrap';
+
+import Search from "./Search";
+import Autorisation from "./Autorisation";
+import Words from "./Words";
+import Random from "./Random";
+import ChangeList from "./ChangeList"
+import PageNumbers from './PageNumbers';
+import ModalWindow from './ModalWindow';
+import AutorisationModalWindow from './AutorisationModalWindow';
+import RegistrationModalWindow from './RegistrationModalWindow';
+
+
+
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section>
+      <Container>
+        <Row className='nav'>
+          <Search />
+          <Autorisation />
+        </Row>
+        <Row>
+          <Col xs={8}>
+            <Words />
+            <PageNumbers/>
+          </Col>
+          <Col xs={4}>
+            <Random />
+            <ChangeList />
+          </Col>
+        </Row>
+      </Container>
+      <ModalWindow />
+      <AutorisationModalWindow />
+      <RegistrationModalWindow />
+    </section>
   );
 }
 

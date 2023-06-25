@@ -1,38 +1,349 @@
-.App {
+section {
+  background-color: white;
+  width: 935px;
+  height: 635px;
+  margin: 37.5px auto;
+  border-radius: 40px;
+}
+
+.user button:hover, .randomWord button:hover {
+  background-color: #FD9A01;
+  color: white;
+  transition: 0.2s;
+}
+
+.pageNumbers span:hover {
+  color: #FD9A01;
+  transition: 0.2s;
+}
+
+.user p:hover {
+  color: #FD9A01;
+  transition: 0.2s;
+}
+
+.changeList button:hover {
+  color: white;
+  background-color: #FD9A01;
+}
+
+form .search-button:hover{
+  background-color: #FD9A01;
+}
+
+.word button:hover{
+  background-color: #FD9A01;
+} 
+
+/******************navbar********************/
+.nav {
+  min-height: 110px;
+}
+
+input, input:hover, button {
+  border: 0;
+  outline: 0;
+}
+
+.search-txt-input {
+  padding: 7px 0px 7px 35px;
+  font-size: 24px;
+  border-right: 0px;
+  background-color: #FFD52E;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  width: 431px;
+  color: #FD9A01;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+form .search-button{
+  padding: 12.5px 33px 12px 23px;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  background: #FD9A01;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  position: relative;
+  left: -5px;
+  top: -3.5px;
+}
+
+.search-button img {
+  max-width: 25px;
+}
+
+form {
+  display: inline-block;
+}
+
+.user {
+  max-width: 255px !important;
+}
+
+.user p, .user button {
+  display: inline-block;
+  font-size: 24px;
+  color: #FFD52E;
+}
+
+.user p {
+  margin-top: 40px;
+  cursor: pointer;
+}
+
+.user button {
+  text-align: right;
+  padding: 7px 32px;
+  background-color: #FD9A01;
+  border-radius: 30px;
+  margin-top: 33px;
+  float: right;
+}
+
+/******************words********************/
+
+.words{
+  min-height: 464px;
+}
+
+.word, .pageNumbers {
+  margin-left: 30px;
+}
+
+.word p {
+  padding: 5px 0px;
+  font-size: 20px;
+  border-right: 0px;
+  background-color: #FFD52E;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  color: white;
+  display: inline-block;
+  margin-bottom: 18px;
+}
+
+.word button {
+  padding: 7px 15px 9px 13px;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  background: #FD9A01;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  position: relative;
+  display: inline-block;
+  left: -5px;
+  top: -2px;
+}
+
+.word p span {
+  padding: 0 30px;
+}
+
+.word p .word_equals {
+  padding: 0 10px;
+}
+
+.word button img {
+  max-width: 27px;
+}
+
+
+.pageNumbers {
+  margin-top: 8px;
+}
+
+.pageNumbers span {
+  font-size: 20px;
+  color: #FFD52E;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.pageNumbers span:first-child {
+  padding: 0;
+}
+
+.pageNumbers span.pageNumber {
+  color: #FFD52E;
+}
+
+.pageNumbers span.pageNumber-activ {
+  color: #FD9A01;
+}
+
+
+
+/******************randomWord********************/
+.randomWord {
+  background-color: #FFD52E;
+  width: 255px;
+  height: 340px;
+  border-radius: 30px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.randomWord .randomWord-title, .randomWord button {
+  font-size: 24px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.randomWord-title {
+  color: #FD9A01;
+  display: inline-block;
+  margin-top: 30px;
+  margin-bottom: 0;
+  line-height: 24px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.randomWord-main {
+  margin: 28px;
+}
+
+.randomWord-main p {
   color: white;
+  font-size: 32px;
+  margin-bottom: 0;
+  line-height: 37px;
 }
 
-.App-link {
-  color: #61dafb;
+.randomWord-main .randomWord-main_equals {
+  font-size: 48px;
+  display: inline-block;
+  margin-top: 0;
+  transform: rotate(-90deg);
+  margin: 19px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.randomWord button {
+  background-color: #FD9A01;
+  padding: 7px 35px;
+  border-radius: 30px;
+  color: #FFD52E;
+}
+
+/******************changeList********************/
+.changeList {
+  margin-top: 25px;
+  text-align: center;
+  background-color: #FFD52E;
+  width: 255px;
+  height: 128px;
+  border-radius: 30px;
+}
+
+.changeList-title {
+  color: #FD9A01;
+  font-size: 24px;
+  line-height: 28px;
+  padding-top: 20px;
+}
+
+.changeList button {
+  color: #FFD52E;
+  font-size: 24px;
+  line-height: 28px;
+  padding: 10px 35px;
+  background-color: #FD9A01;
+  border-radius: 30px;
+}
+
+.changeList span {
+  margin: 0 13px;
+}
+
+/******************ModalWindow********************/
+
+.modalWindow {
+  vertical-align: middle;
+  width: 450px;
+  font-size: 24px;
+
+  background-color: #fff;
+  border-radius: 30px;
+}
+
+.modalWindow-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modalWindow-container:before {
+  height: 100%;
+  content: '';
+  vertical-align: middle;
+  display: inline-block;
+}
+
+
+.modalWindow-title{
+  background-color: #FD9A01;
+  border-radius: 28px 28px 0 0;
+  height: 60px;
+  padding-top: 12px;
+  margin-bottom: 30px;
+}
+
+.modalWindow-title p{
+  display: inline-block;
+  font-size: 24px;
+  line-height: 28px;
+  padding-left: 58px;
+
+  color: #FFD52E;
+}
+
+.modalWindow-title button{
+  padding-right: 32px;
+  float: right;
+}
+
+.modalWindow input{
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.modalWindow input[type="text"], .modalWindow input[type="login"], .modalWindow input[type="password"]{
+  background-color: #FFD52E;
+  border-radius: 30px;
+  padding: 8px 20px;
+  color: #FD9A01;
+}
+
+.modalWindow input[type="submit"]{
+  margin: 30px auto 0 auto;
+  background-color: #FD9A01;
+  border-radius: 30px;
+  padding: 8px 35px;
+  color: #FFD52E;
+}
+
+.modalWindow-input::placeholder, .search-txt-input::placeholder{
+  color:#FD9A01;  
+  opacity: 0.5;
+}
+
+.modalWindow-reg_button{
+  color:#FD9A01;
+  font-size: 20px;
+  line-height: 23px;
+  padding-top: 10px;
+  margin: 0;
+  display: inline-block;
+}
+
+.modalWindow-reg_button:hover{
+  color: #FFD52E;
+  cursor: pointer;
 }
